@@ -21,7 +21,7 @@ if uploaded_file:
 
         # Predikció
         results = model.predict(source=temp_path)
-        st.image(image, caption='Feltöltött kép', use_column_width=True)
+        st.image(image, caption='Feltöltött kép', use_container_width=True)
         st.write("Eredmények:")
         for box in results[0].boxes:
             cls = box.cls.cpu().numpy().item()
