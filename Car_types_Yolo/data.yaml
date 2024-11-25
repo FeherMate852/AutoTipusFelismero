@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['sedan', 'sport', 'suv']
+
+roboflow:
+  workspace: fehermate852
+  project: car-types-adznc
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/fehermate852/car-types-adznc/dataset/1
